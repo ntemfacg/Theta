@@ -6,10 +6,26 @@
             android:icon="@drawable/user_48"
             android:title="MY ACCOUNT" />
         <item
+            android:id="@+id/category"
+            android:icon="@drawable/category_24"
+            android:title="CATEGORY"/>
+        <item
             android:id="@+id/action_settings"
             android:icon="@drawable/settings_24"
             android:title="@string/action_settings"/>
     </group>
+
+    <group android:id="@+id/help_about">
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about_24"
+            android:title="ABOUT"/>
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help_24"
+            android:title="HELP"/>
+    </group>
+
     <group android:id="@+id/menu_bottom">
         <item
             android:id="@+id/logout"

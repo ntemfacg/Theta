@@ -14,9 +14,8 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#EEEEEE"
-            android:backgroundTint="#bEbEbE"
+            android:layout_height="55dp"
+            android:background="@drawable/header_bg"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
             tools:layout_editor_absoluteX="4dp" />
 
@@ -67,6 +66,7 @@
     <android.support.design.widget.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:background="#ffffff"
         app:menu="@menu/navigation_menu"
         app:headerLayout="@layout/home_navigation_header"
         android:layout_gravity="start">
