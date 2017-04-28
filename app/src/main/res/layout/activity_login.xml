@@ -27,6 +27,15 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter your second name"
+            android:ems="10"
+            android:id="@+id/etSecondName" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
             android:id="@+id/etEmail"
@@ -40,6 +49,15 @@
             android:ems="10"
             android:id="@+id/etPassword"
             android:hint="enter password" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="mobile number"
+            android:ems="10"
+            android:id="@+id/etMobile" />
 
         <ImageView
             android:background="@drawable/background"
