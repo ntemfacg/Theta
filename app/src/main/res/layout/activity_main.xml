@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/temp_bg"
+    android:background="@drawable/bg_temp"
     tools:context="com.example.ntemfacg.theta.MainActivity">
 
     <Button
@@ -16,6 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
+        android:onClick="goregister"
+        android:background="@drawable/barcolour"
         android:layout_alignBaseline="@+id/button"
         android:layout_alignBottom="@+id/button"
         android:layout_alignParentRight="true"
@@ -28,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
+        android:background="@drawable/barcolour"
         android:layout_marginLeft="47dp"
         android:layout_marginStart="47dp"
         android:layout_alignParentBottom="true"
@@ -35,7 +38,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="53dp" />
 
-    <Button
+    <!--<Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,5 +46,5 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:onClick="gohome"
-        android:text="Button" />
+        android:text="Button" />-->
 </RelativeLayout>

@@ -6,7 +6,7 @@
     <item
         android:id="@+id/test"
         android:orderInCategory="2"
-        android:title="Test"
+        android:title="Exit"
         android:icon="@drawable/logout_24"
         app:showAsAction="always"/>
 </menu>

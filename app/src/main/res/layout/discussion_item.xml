@@ -6,8 +6,10 @@
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:gravity="center"
-    android:background="@color/colorPrimaryBlue"
-    android:layoutDirection="rtl"
+    android:background="#efeff2"
+    android:layoutDirection="ltr"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
     android:textAlignment="center"
     android:focusable="false"
     android:focusableInTouchMode="false">
@@ -23,7 +25,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
         android:paddingRight="5dp"
-        android:background="@drawable/background"
+        android:background="@drawable/background_stroke"
         android:paddingTop="2dp"
         android:paddingBottom="1dp">
         <LinearLayout
@@ -34,7 +36,7 @@
             android:gravity="center"
             android:layoutDirection="ltr"
             android:textAlignment="center"
-            android:background="@drawable/background"
+            android:background="#ffffff"
             android:paddingTop="1dp"
             android:paddingBottom="1dp"
             android:paddingLeft="3dp"
@@ -47,7 +49,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="14-03-2017"
                 android:textSize="10dp"
-                android:id="@+id/txt_tweet_date" />
+                android:id="@+id/txt_discussion_date" />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -68,8 +70,8 @@
                 android:textStyle="bold"
                 android:paddingRight="3dp" />
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/user_24"
                 android:id="@+id/picture_path"
                 android:layout_alignParentTop="true"
@@ -87,7 +89,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="This is a Sample question for the Theta forum application."
 
-            android:id="@+id/txt_tweet"
+            android:id="@+id/txt_discussion"
             android:layout_alignParentTop="true"
             android:gravity="left"
             android:textAlignment="gravity"
@@ -106,22 +108,22 @@
             android:src="#bebebe"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:id="@+id/query_picture"
+            android:id="@+id/discussion_picture"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_alignBottom="@+id/txtflollower"
             android:layout_weight="0"
             android:layout_marginBottom="1dp"
-            android:layout_height="100pt" />
-        <LinearLayout
+            android:layout_height="50pt" />
+        <RelativeLayout
             android:paddingLeft="10dp"
             android:paddingRight="3dp"
             android:paddingTop="3dp"
             android:paddingBottom="5dp"
             android:layoutDirection="ltr"
             android:orientation="horizontal"
-            android:background="@drawable/background"
+            android:background="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -130,7 +132,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:clickable="true"
-                android:layout_marginLeft="340dp"
+                android:layout_alignParentRight="true"
                 android:background="@drawable/like_24" />
 
             <ImageView
@@ -138,9 +140,9 @@
                 android:layout_height="25dp"
                 android:id="@+id/iv_comment"
                 android:clickable="true"
-                android:layout_marginLeft="-100dp"
+                android:layout_marginLeft="200dp"
                 android:background="@drawable/comments_24" />
-        </LinearLayout>
+        </RelativeLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"

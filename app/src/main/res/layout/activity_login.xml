@@ -2,91 +2,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ntemfacg.theta.LoginActivity">
-
-    <LinearLayout
-        android:gravity="center"
-        android:orientation="vertical"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <EditText
+        <LinearLayout
             android:gravity="center"
+            android:background="@drawable/bg_temp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="Enter your name"
-            android:ems="10"
-            android:id="@+id/etName" />
+            android:layout_height="match_parent">
 
-        <EditText
-            android:gravity="center"
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Enter your name"
+                android:textCursorDrawable="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:ems="10"
+                android:id="@+id/etName" />
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Enter your second name"
+                android:textColorHint="#010101"
+                android:ems="10"
+                android:id="@+id/etSecondName" />
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#010101"
+                android:ems="10"
+                android:id="@+id/etEmail"
+                android:hint="enter email" />
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:textColorHint="#010101"
+                android:id="@+id/etPassword"
+                android:hint="enter password" />
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="mobile number"
+                android:textColorHint="#010101"
+                android:ems="10"
+                android:id="@+id/etMobile" />
+
+            <ImageView
+                android:background="@drawable/background"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user_48"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/ivUserImage"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/txtflollower"
+                android:layout_weight="0"
+                android:layout_marginBottom="1dp"
+                android:layout_height="70pt"
+                android:layout_width="70pt" />
+
+            <Button
+                android:text="Register"
+                android:id="@+id/bulogin"
+                android:background="@drawable/barcolour"
+                android:paddingRight="5dp"
+                android:textSize="10dp"
+                android:textColor="#fdfffa"
+                android:onClick="buLogin"
+                android:layout_height="wrap_content"
+                android:layout_width="50pt" />
+
+        </LinearLayout>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="Enter your second name"
-            android:ems="10"
-            android:id="@+id/etSecondName" />
+            android:layout_height="55dp"
+            android:foregroundGravity="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            tools:layout_editor_absoluteX="4dp">
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Register"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title_register" />-->
 
-        <EditText
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/etEmail"
-            android:hint="enter email" />
 
-        <EditText
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:id="@+id/etPassword"
-            android:hint="enter password" />
+        </android.support.v7.widget.Toolbar>
 
-        <EditText
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="mobile number"
-            android:ems="10"
-            android:id="@+id/etMobile" />
-
-        <ImageView
-            android:background="@drawable/background"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/user_48"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:id="@+id/ivUserImage"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignBottom="@+id/txtflollower"
-            android:layout_weight="0"
-            android:layout_marginBottom="1dp"
-            android:layout_height="100pt"
-            android:layout_width="80pt" />
-
-        <Button
-            android:text="Login"
-            android:id="@+id/bulogin"
-            android:background="@drawable/barcolour"
-            android:paddingRight="5dp"
-            android:textSize="10dp"
-            android:textColor="#fdfffa"
-            android:onClick="buLogin"
-            android:layout_height="wrap_content"
-            android:layout_width="50pt" />
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

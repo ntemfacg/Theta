@@ -26,7 +26,7 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="@string/title_activity_register" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".New_query"

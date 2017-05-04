@@ -32,6 +32,7 @@
         android:layout_weight="0"
         android:layout_marginLeft="19dp"
         android:layout_marginRight="20dp"
+        android:inputType="textMultiLine"
         android:ems="10"
         android:gravity="top"
         android:hint="e.g. What are APIs."
@@ -50,6 +51,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
+            android:background="@drawable/barcolour"
             android:layout_gravity="right"
             android:layout_marginEnd="17dp"
             android:layout_marginRight="17dp"
@@ -58,7 +60,7 @@
             android:text="Post" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/attach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
