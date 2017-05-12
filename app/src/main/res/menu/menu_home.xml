@@ -9,4 +9,10 @@
         android:title="Exit"
         android:icon="@drawable/logout_24"
         app:showAsAction="always"/>
+    <item
+        android:id="@+id/searchbar"
+        android:orderInCategory="1"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom"/>
 </menu>
