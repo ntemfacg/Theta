@@ -1,9 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.ntemfacg.theta.LoginActivity">
-    <RelativeLayout
+    android:layout_height="match_parent">
+<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
@@ -14,28 +13,6 @@
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
-
-            <EditText
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="Enter your name"
-                android:textCursorDrawable="@color/colorPrimaryDark"
-                android:textColorHint="@color/colorPrimaryDark"
-                android:ems="10"
-                android:id="@+id/etName" />
-
-            <EditText
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="Enter your second name"
-                android:textColorHint="#010101"
-                android:ems="10"
-                android:id="@+id/etSecondName" />
 
             <EditText
                 android:gravity="center"
@@ -57,32 +34,6 @@
                 android:id="@+id/etPassword"
                 android:hint="enter password" />
 
-            <EditText
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="mobile number"
-                android:textColorHint="#010101"
-                android:ems="10"
-                android:id="@+id/etMobile" />
-
-            <ImageView
-                android:background="@drawable/background"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/user_48"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:id="@+id/ivUserImage"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignBottom="@+id/txtflollower"
-                android:layout_weight="0"
-                android:layout_marginBottom="1dp"
-                android:layout_height="70pt"
-                android:layout_width="70pt" />
 
             <Button
                 android:text="Register"
@@ -91,7 +42,7 @@
                 android:paddingRight="5dp"
                 android:textSize="10dp"
                 android:textColor="#fdfffa"
-                android:onClick="buRegister"
+                android:onClick="buttonLogin"
                 android:layout_height="wrap_content"
                 android:layout_width="50pt" />
 
