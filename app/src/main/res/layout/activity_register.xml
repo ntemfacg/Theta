@@ -94,6 +94,24 @@
                 android:onClick="buRegister"
                 android:layout_height="wrap_content"
                 android:layout_width="50pt" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="#eeeeee"
+                    android:textStyle="bold"
+                    android:onClick="switchLogin"
+                    android:text="Already have an account? Login"
+                    android:layout_gravity="center"
+                    android:id="@+id/switchLogin" />
+            </LinearLayout>
 
         </LinearLayout>
         <android.support.v7.widget.Toolbar

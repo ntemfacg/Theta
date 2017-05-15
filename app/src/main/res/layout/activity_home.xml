@@ -10,12 +10,13 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/home_layout2">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:background="@drawable/header_bg"
+            android:background="@drawable/bar_theme"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
             tools:layout_editor_absoluteX="4dp" />
 
@@ -41,7 +42,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_below="@+id/searchbar2">
+            android:id="@+id/disp_home"
+            android:layout_below="@+id/toolbar">
             <ListView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
@@ -52,15 +54,15 @@
                 android:layout_weight="1" />
         </RelativeLayout>
 
-        <SearchView
+        <!--<SearchView
             android:id="@+id/searchbar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
             android:divider="#eeeeee"
-            android:dividerHeight="9dp"
+            android:dividerHeight="5dp"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true" -->/>
     </RelativeLayout>
 
     <android.support.design.widget.NavigationView
