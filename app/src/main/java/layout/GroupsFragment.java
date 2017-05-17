@@ -122,7 +122,6 @@ public class GroupsFragment extends Fragment {
                 @Override
                 public void onClick(View view){
                     SelectedTopicID=Integer.parseInt(s.topic_id);
-                    //LoadDiscussions(0,SearchType.OnePerson);
                     fr_join.setBackgroundResource(R.drawable.leave_24);
                     //textView.setText("joined");
                     String url="http://192.168.0.6/tHETASERVER/add_interest.php?user_id="+SaveSettings.UserID +"&topic_id="+SelectedTopicID+"&op=1";
@@ -135,11 +134,6 @@ public class GroupsFragment extends Fragment {
                 @Override
                 public void onClick(View view){
                     Dynamic_id =Integer.parseInt(s.topic_id);// s.topic_id;
-                    //HomeActivity homeActivity = new HomeActivity();
-                    //homeActivity.loadgroupfeed(getActivity());
-                    //Intent intent = new Intent(getActivity().getBaseContext(), HomeActivity.class);
-                    //intent.putExtra("maz", Dynamic_id);
-                    //getActivity().startActivity(intent);
                     TopicDiscussionFragment topicDiscussionFragment = new TopicDiscussionFragment();
                     Bundle bundle = new Bundle();
                     bundle.putString("interest_id", s.topic_id);
@@ -148,14 +142,6 @@ public class GroupsFragment extends Fragment {
                     FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                     fragmentTransaction.replace(R.id.disp_home, topicDiscussionFragment);
                     fragmentTransaction.commit();
-                    //Toast.makeText(getActivity().getApplicationContext(), Dynamic_id, Toast.LENGTH_LONG).show();
-                    //HomeActivity fragment= new HomeActivity();
-                    /*FragmentManager fm = getFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.remove(GroupsFragment.this);
-                    ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
-                    ft.commit();*/
-                    //getActivity().finish();
                 }
             });
 
@@ -170,91 +156,6 @@ public class GroupsFragment extends Fragment {
             });
             return myView;
 
-            /*if(s.topic_name.equals("add")) {
-                LayoutInflater mInflater =getActivity().getLayoutInflater();
-                View myView = mInflater.inflate(R.layout.activity_new_query, null);
-
-                final EditText etPost = (EditText) myView.findViewById(R.id.inputNote);
-                Button iv_post=(Button) myView.findViewById(R.id.buttonNoteDone) ;
-
-                ImageView iv_attach=(ImageView) myView.findViewById(R.id.attach) ;
-                iv_attach.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //LoadImage();
-                    }
-                });
-                iv_post.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        String discussions=null;
-                        try {
-                            //for space with name
-                            discussions = java.net.URLEncoder.encode(etPost.getText().toString() , "UTF-8");
-
-                            if (downloadUrl == null){
-                                downloadUrl="empty.jpg";
-                                downloadUrl= java.net.URLEncoder.encode(downloadUrl , "UTF-8");
-                            }
-
-                            else{
-                                downloadUrl= java.net.URLEncoder.encode(downloadUrl , "UTF-8");
-                            }
-
-                        } catch (UnsupportedEncodingException e) {
-                            discussions=".";
-                        }
-                        *//*if (downloadUrl == null){
-                            downloadUrl="empty.jpg";
-                            return;
-                        }*//*
-                        *//*String url="http://192.168.0.6/tHETASERVER/add_discussion.php?user_id="+ SaveSettings.UserID +"&topic_id="+topic_temp+"&discussion_text="+ discussions +"&discussion_picture="+ downloadUrl;
-                        etPost.setText("");
-                        new HomeActivity.MyAsyncTaskgetNews().execute(url);*//*
-                    }
-                });
-                return myView;
-            }*/
-            /*else if(s.topic_name.equals("loading")) {
-                LayoutInflater mInflater =getActivity().getLayoutInflater();
-                View myView = mInflater.inflate(R.layout.discussions_loading, null);
-                return myView;
-            }*/
-            /*else if(s.topic_name.equals("nodiscussions")) {
-                LayoutInflater mInflater =getActivity().getLayoutInflater();
-                View myView = mInflater.inflate(R.layout.no_new_discussion, null);
-                return myView;
-            }*/
-            //return tView;
-
-            /*else {
-                LayoutInflater mInflater = getActivity().getLayoutInflater();
-                View myView = mInflater.inflate(R.layout.topic_item, null);
-                TextView txtUserName = (TextView) myView.findViewById(R.id.group_title);
-                txtUserName.setText(s.topic_name);
-                txtUserName.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        *//*
-                        SelectedUserID=Integer.parseInt(s.user_id);
-                        LoadTweets(0,SearchType.OnePerson);
-                        txtnamefollowers.setText(s.first_name);
-                        String url="http://10.0.2.2/~hussienalrubaye/twitterserver/isfollowing.php?user_id="+SaveSettings.UserID +"&following_user_id="+SelectedUserID;
-                        new MyAsyncTaskgetNews().execute(url);*//*
-                    }
-                });
-                *//*TextView txt_discussion = (TextView) myView.findViewById(R.id.txt_discussion);
-                txt_discussion.setText(s.discussion_text);
-                TextView txt_discussion_date = (TextView) myView.findViewById(R.id.txt_discussion_date);
-                txt_discussion_date.setText(s.discussion_date);
-                ImageView discussion_picture=(ImageView)myView.findViewById(R.id.discussion_picture);
-                Picasso.with(context).load(s.discussion_picture).into(discussion_picture);
-                ImageView picture_path=(ImageView)myView.findViewById(R.id.picture_path);
-                Picasso.with(context).load(s.picture_path).into(picture_path);
-                TextView topicTitle = (TextView) myView.findViewById(R.id.topic_title);
-                topicTitle.setText(s.topic_name);*//*
-                return myView;
-            }*/
         }
         //load image
 
