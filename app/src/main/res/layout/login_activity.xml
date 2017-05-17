@@ -60,7 +60,7 @@
                     android:textColor="#eeeeee"
                     android:textStyle="bold"
                     android:onClick="switchRegister"
-                    android:text="Dont't have an account? Register"
+                    android:text="Don't have an account? Register"
                     android:layout_gravity="center"
                     android:id="@+id/switchRegister" />
             </LinearLayout>

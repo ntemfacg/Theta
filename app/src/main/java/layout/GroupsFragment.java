@@ -2,6 +2,7 @@ package layout;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -134,15 +135,26 @@ public class GroupsFragment extends Fragment {
                 @Override
                 public void onClick(View view){
                     Dynamic_id =Integer.parseInt(s.topic_id);// s.topic_id;
-                    HomeActivity homeActivity = new HomeActivity();
-                    homeActivity.loadgroupfeed(getActivity());
+                    //HomeActivity homeActivity = new HomeActivity();
+                    //homeActivity.loadgroupfeed(getActivity());
+                    //Intent intent = new Intent(getActivity().getBaseContext(), HomeActivity.class);
+                    //intent.putExtra("maz", Dynamic_id);
+                    //getActivity().startActivity(intent);
+                    TopicDiscussionFragment topicDiscussionFragment = new TopicDiscussionFragment();
+                    Bundle bundle = new Bundle();
+                    bundle.putString("interest_id", s.topic_id);
+                    bundle.putString("group", s.topic_name);
+                    topicDiscussionFragment.setArguments(bundle);
+                    FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.disp_home, topicDiscussionFragment);
+                    fragmentTransaction.commit();
                     //Toast.makeText(getActivity().getApplicationContext(), Dynamic_id, Toast.LENGTH_LONG).show();
                     //HomeActivity fragment= new HomeActivity();
-                    FragmentManager fm = getFragmentManager();
+                    /*FragmentManager fm = getFragmentManager();
                     FragmentTransaction ft = fm.beginTransaction();
                     ft.remove(GroupsFragment.this);
                     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE);
-                    ft.commit();
+                    ft.commit();*/
                     //getActivity().finish();
                 }
             });

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.TopicDiscussionFragment">
+
+    <!-- TODO: Update blank fragment layout
+    <TextView
+        android:id="@+id/textts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FRAGMENT"
+        android:textSize="20dp"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        android:layout_below="@+id/textts">
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background_stroke"
+            android:id="@+id/interest_discussions"
+            android:divider="#efeff2"
+            android:dividerHeight="5dp">
+
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

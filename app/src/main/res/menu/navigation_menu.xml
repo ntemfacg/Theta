@@ -13,7 +13,7 @@
         <item
             android:id="@+id/nav_groups"
             android:icon="@drawable/category_24"
-            android:title="MY COURSE"/>
+            android:title="GROUPS"/>
     </group>
 
     <group android:id="@+id/help_about">
